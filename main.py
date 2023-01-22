@@ -3,7 +3,7 @@ import time
 
 import libtorrent as lt
 from PyQt5.QtWidgets import QApplication, QLabel, QLineEdit, QPushButton, QVBoxLayout, QWidget, QProgressBar
-
+from plyer import notification
 
 class BitTorrentClient(QWidget):
     def __init__(self):
@@ -53,6 +53,11 @@ class BitTorrentClient(QWidget):
 
         self.progress_bar.setVisible(False)
         self.success_label.setText("Download complete!")
+        notification.notify(
+            title="Download complete!",
+            message="Your download is finished",
+            timeout=10
+        )
 
 
 if __name__ == '__main__':
