@@ -15,5 +15,5 @@ This is a simple BitTorrent client implemented in Python using the `libtorrent-r
 6. You can navigate to the `/storrent_downloads` path in order to find the downloaded files
 
 ~~~ 
-Note: It is not legal to download copyrighted material using torrents.
+Note: It is not legal to download copyrighted material using torrents. Or, is it?
 ~~~
